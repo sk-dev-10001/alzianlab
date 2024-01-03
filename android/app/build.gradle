@@ -89,6 +89,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('todo.keystore')
+            storePassword '12345678'
+            keyAlias 'todo'
+            keyPassword '12345678'
+        }
     }
     buildTypes {
         debug {
